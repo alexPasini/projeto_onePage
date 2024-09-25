@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  background-color: rgba(9, 137, 6, 1);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.info-btn {
+  display: flex;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.info-btn button {
+  padding: 10px 20px;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-btn button:hover {
+  color: #f0f0f08e;
+}
+
+#about {
+  margin-right: 50px;
+  background-color: rgb(0, 0, 0, 0);
+  margin-right: -15px;
+  font-size: 16px;
+}
+
+#contact {
+  background-color: rgb(0, 0, 0, 0);
+  font-size: 16px;
+}
+
+.img-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section1,
+#section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: auto;
+}
+
+#section1 {
+  margin-top: -4px;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+.container-about {
+  width: 50%;
+  padding: 0 135px 0 135px;
+  color: #4a4a4a;
+}
+
+#conteiner-ret1,
+#conteiner-ret2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#conteiner-ret1 img,
+#conteiner-ret2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#title {
+  font-size: 60px;
+  font-family: "Balsamiq Sans", sans-serif;
+  letter-spacing: 5.5px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-text h2 {
+  margin: 60px 120px;
+}
+
+.info-text p,
+.cripto {
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+.qr-code {
+  display: flex;
+  justify-content: baseline;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.qr-code ul {
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.qr-code img {
+  width: 230px;
+  height: 230px;
+}
+
+.cripto img {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cripto .wallet1,
+.cripto .wallet2,
+.cripto .wallet3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group img {
+  width: 300px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.copy-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.copy-btn img {
+  width: 30px;
+}
+
+.depoimentos img {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}

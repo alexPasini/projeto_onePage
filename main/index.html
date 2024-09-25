@@ -1,34 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+1:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Projeto One Page</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
-
   </head>
 
-    <header>
+  <header>
+    <div class="logo">
+      <img src="assets/Cannabis Org.png" alt="Logo" />
+    </div>
+    <div class="info-btn">
+      <button id="about">Quem somos</button>
+      <button id="contact">Contato</button>
+    </div>
+  </header>
+  <body>
+    <div>
+      <img
+        class="img-back"
+        src="assets/image 1.png"
+        alt="imagem de conta gotas com liquido de canabidiol dentro"
+      />
+    </div>
+    <div id="section1">
+      <div class="container-about">
+        <h2 id="title">Quem somos?</h2>
+        <h4>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          placeat maiores quas dolorum! Cumque similique quia quo aut ad.
+          Molestias eius, inventore ipsam vero tenetur cumque maxime ratione
+          saepe dignissimos?
+        </h4>
+      </div>
+      <div id="conteiner-ret1">
+        <img src="assets/ret1.png" alt="Imagem descritiva" />
+      </div>
+    </div>
 
-        <div class="logo"></div>
-            <img src="assets/Cannabis Org.png" alt="Logo" />
+    <div id="section2">
+      <div id="conteiner-ret2">
+        <img src="assets/ret2.png" alt="Imagem descritiva" />
+      </div>
+      <div class="container-about">
+        <h2 id="title">O que fazemos?</h2>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla libero
+          aspernatur, harum similique velit reprehenderit quae reiciendis, eos
+          molestias placeat blanditiis dolor! Ut vel repellendus ipsa ipsum,
+          voluptatibus id excepturi.
+        </h4>
+      </div>
+    </div>
+
+    <div>
+      <div class="info-text">
+        <h2 id="title">Faça sua doação e salve vidas</h2>
+        <p>Escaneie o QR code abaixo para doar via PIX</p>
+      </div>
+      <div class="qr-code">
+        <img src="assets/qrcode.png" alt="qr code de um PIX" />
+        <ul>
+          <li>Banco:</li>
+          <li>Agencia:</li>
+          <li>Número:</li>
+          <li>Dígito:</li>
+          <li>CNPJ:</li>
+        </ul>
+      </div>
+      <div class="cripto">
+        <p>Ou se preferir, doe em criptomoedas!</p>
+
+        <div class="wallet1">
+          <img src="assets/btc.png" alt="simbolo bitcoin" />
+          <div class="input-group">
+            <img src="assets/retangulo.png" alt="retangulo cinza" />
+            <button class="copy-btn">
+              <img src="assets/copy.png" alt="icone de copiar" />
+            </button>
+          </div>
         </div>
-        <div class="info-btn">
-            <button>Quem somos</button>
-            <button>Contato</button>
+
+        <div class="wallet2">
+          <img src="assets/eth.png" alt="simbolo ethereum" />
+          <div class="input-group">
+            <img src="assets/retangulo.png" alt="retangulo cinza" />
+            <button class="copy-btn">
+              <img src="assets/copy.png" alt="icone de copiar" />
+            </button>
+          </div>
         </div>
 
-    </header>
-    
-    <body>
-
-        <!-- <h2>Texto a ser copiado:</h2>
-        <p id="texto">Este é o texto que será copiado!</p>
-        <button onclick="copiarTexto()">Copiar Texto</button> -->
-
-    </body>
-
+        <div class="wallet3">
+          <img src="assets/moeda.png" alt="simbolo moeda" />
+          <div class="input-group">
+            <img src="assets/retangulo.png" alt="retangulo cinza" />
+            <button class="copy-btn">
+              <img src="assets/copy.png" alt="icone de copiar" />
+            </button>
+          </div>
+              <!-- <p id="texto">Este é o texto que será copiado!</p>
+              <button onclick="copiarTexto()">Copiar Texto</button> -->
+          </div>
+        </div> 
+        <div class="depoimentos">
+          <img src="assets/criança.png" alt="criança sentada em um muro rindo">
+          <h2>Depoimentos</h2>
+        </div>
+  </body>
 </html>

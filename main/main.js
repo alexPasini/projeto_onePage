@@ -9,6 +9,4 @@ function copiarTexto() {
   document.execCommand("copy");
 
   document.body.removeChild(campoTemporario);
-
-  alert("Texto copiado para a área de transferência!");
 }
