@@ -19,8 +19,11 @@
       <img src="assets/Cannabis Org.png" alt="Logo" />
     </div>
     <div class="info-btn">
-      <button id="about">Quem somos</button>
-      <button id="contact">Contato</button>
+      <a href="#section1" class="button">Quem somos</a>
+      <a href="#section2" class="button">O que Fazemos</a>
+      <a href="#doacao" class="button">Doações</a>
+      <a href="#dep" class="button">Depoimentos</a>
+      <a href="#contact" class="button">Contato</a>
     </div>
   </header>
   <body>
@@ -33,7 +36,7 @@
     </div>
     <div id="section1">
       <div class="container-about">
-        <h2 id="title">Quem somos?</h2>
+        <h2 class="title">Quem somos?</h2>
         <h4>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
           placeat maiores quas dolorum! Cumque similique quia quo aut ad.
@@ -51,7 +54,7 @@
         <img src="assets/ret2.png" alt="Imagem descritiva" />
       </div>
       <div class="container-about">
-        <h2 id="title">O que fazemos?</h2>
+        <h2 class="title">O que fazemos?</h2>
         <h4>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla libero
           aspernatur, harum similique velit reprehenderit quae reiciendis, eos
@@ -60,60 +63,130 @@
         </h4>
       </div>
     </div>
+    <div class="info-text">
+      <h2 id="doacao" class="title">Faça sua doação e salve vidas</h2>
+      <p>Escaneie o QR code abaixo para doar via PIX</p>
+    </div>
+    <div class="qr-code">
+      <img src="assets/qrcode.png" alt="qr code de um PIX" />
+      <ul>
+        <li>Banco:</li>
+        <li>Agência:</li>
+        <li>Número:</li>
+        <li>Dígito:</li>
+        <li>CNPJ:</li>
+      </ul>
+    </div>
+    <div class="cripto">
+      <p>Ou se preferir, doe em criptomoedas!</p>
 
-    <div>
-      <div class="info-text">
-        <h2 id="title">Faça sua doação e salve vidas</h2>
-        <p>Escaneie o QR code abaixo para doar via PIX</p>
+      <div
+        class="wallet1"
+        data-value="bc1qmg7lh5wpalndxwn25ta2ryaugqll7frg4dcwnc"
+      >
+        <img src="assets/btc.png" alt="simbolo bitcoin" />
+        <div class="input-group">
+          <p>bc1qmg7lh5wpalndxwn25ta2ryaugqll7frg4dcwnc</p>
+          <button class="copy-btn" onclick="copiarTexto(this)">
+            <img src="assets/copy.png" alt="icone de copiar" />
+          </button>
+        </div>
       </div>
-      <div class="qr-code">
-        <img src="assets/qrcode.png" alt="qr code de um PIX" />
-        <ul>
-          <li>Banco:</li>
-          <li>Agencia:</li>
-          <li>Número:</li>
-          <li>Dígito:</li>
-          <li>CNPJ:</li>
-        </ul>
+
+      <div
+        class="wallet2"
+        data-value="0x941895048743012F86CaEB7C57F2467118aFC01c"
+      >
+        <img src="assets/eth.png" alt="simbolo ethereum" />
+        <div class="input-group">
+          <p>0x941895048743012F86CaEB7C57F2467118aFC01c</p>
+          <button class="copy-btn" onclick="copiarTexto(this)">
+            <img src="assets/copy.png" alt="icone de copiar" />
+          </button>
+        </div>
       </div>
-      <div class="cripto">
-        <p>Ou se preferir, doe em criptomoedas!</p>
 
-        <div class="wallet1">
-          <img src="assets/btc.png" alt="simbolo bitcoin" />
-          <div class="input-group">
-            <img src="assets/retangulo.png" alt="retangulo cinza" />
-            <button class="copy-btn">
-              <img src="assets/copy.png" alt="icone de copiar" />
-            </button>
-          </div>
+      <div class="wallet3" data-value="TUdARraYmxKNWZ1S1RUDBsgJVQG6Qs6EtB">
+        <img src="assets/moeda.png" alt="simbolo moeda" />
+        <div class="input-group">
+          <p>TUdARraYmxKNWZ1S1RUDBsgJVQG6Qs6EtB</p>
+          <button class="copy-btn" onclick="copiarTexto(this)">
+            <img src="assets/copy.png" alt="icone de copiar" />
+          </button>
         </div>
+      </div>
+    </div>
 
-        <div class="wallet2">
-          <img src="assets/eth.png" alt="simbolo ethereum" />
-          <div class="input-group">
-            <img src="assets/retangulo.png" alt="retangulo cinza" />
-            <button class="copy-btn">
-              <img src="assets/copy.png" alt="icone de copiar" />
-            </button>
-          </div>
-        </div>
-
-        <div class="wallet3">
-          <img src="assets/moeda.png" alt="simbolo moeda" />
-          <div class="input-group">
-            <img src="assets/retangulo.png" alt="retangulo cinza" />
-            <button class="copy-btn">
-              <img src="assets/copy.png" alt="icone de copiar" />
-            </button>
-          </div>
-              <!-- <p id="texto">Este é o texto que será copiado!</p>
-              <button onclick="copiarTexto()">Copiar Texto</button> -->
-          </div>
-        </div> 
-        <div class="depoimentos">
-          <img src="assets/criança.png" alt="criança sentada em um muro rindo">
-          <h2>Depoimentos</h2>
-        </div>
+    <div class="depoimentos">
+      <img
+        src="assets/criança.png"
+        alt="Imagem de criança sorrindo"
+        class="depoimento-img"
+      />
+      <div id="dep" class="depoimento-texto">
+        <h2>Depoimentos</h2>
+        <p class="dep1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          tempore dolore doloribus illo id eligendi, asperiores ipsam voluptatem
+          obcaecati perferendis neque voluptatibus et quas nostrum, labore quam
+          quos aperiam itaque!
+          <br />
+          <i>Alex Antonio Pasini - Frederico Westphalen / RS</i>
+        </p>
+        <p class="dep2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quidem
+          quasi magnam necessitatibus ab rerum! Ut, sed sint. Enim odit deserunt
+          veritatis ab eius blanditiis harum, provident eaque aperiam quia.
+          <br />
+          <i>Alex Antonio Pasini - FW</i>
+        </p>
+        <p class="dep3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+          nostrum architecto? Repudiandae labore ipsum tempore ipsa voluptates
+          voluptatibus. Quam at nesciunt quas animi ipsa laboriosam velit. Eaque
+          vel ipsam odit.
+          <br />
+          <i>Alex Antonio Pasini - FW</i>
+        </p>
+        <p class="dep4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+          nostrum architecto? Repudiandae labore ipsum tempore ipsa voluptates
+          voluptatibus. Quam at nesciunt quas animi ipsa laboriosam velit. Eaque
+          vel ipsam odit.
+          <br />
+          <i>Alex Antonio Pasini - FW</i>
+        </p>
+        <p class="dep5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+          nostrum architecto? Repudiandae labore ipsum tempore ipsa voluptates
+          voluptatibus. Quam at nesciunt quas animi ipsa laboriosam velit. Eaque
+          vel ipsam odit.
+          <br />
+          <i>Alex Antonio Pasini - FW</i>
+        </p>
+      </div>
+    </div>
   </body>
+
+  <footer>
+    <div id="contact" class="social">
+      <a href=""></a>
+      <img src="assets/Instagram.png" alt="logo do instagram" />
+      <p>Bezoekadres</p>
+      <p>Veemarktkade 8</p>
+      <p>5222AE s-Hertogenbosch</p>
+    </div>
+    <div class="contact">
+      <p>Telefoon +55 55555555</p>
+      <p>info@concapps.nl</p>
+    </div>
+    <div class="info">
+      <h2>Info</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, earum
+        alias suscipit nam blanditiis eos temporibus odit possimus voluptas sint
+        ducimus eligendi ipsum quae expedita atque harum dolore cum velit.
+      </p>
+    </div>
+  </footer>
 </html>
